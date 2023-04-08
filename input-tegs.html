@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HW2 Front-end Prog.Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<section>
+  <form>
+    <div>
+      <label for="email">Введите gmail.com почту:</label>
+      <input type="email" id="email" pattern=".+@gmail\.com" size="30" required>
+    </div>
+    <div>
+      <label for="avatar">Выбрать аватар:</label>
+      <input type="file" id="avatar" accept="image/png, image/jpeg">
+    </div>
+    <div>
+      <label for="tentacles">Введите число от 10 до 100:</label>
+      <input type="number" id="tentacles" min="10" max="100" value="10">
+    </div>
+    <div>
+      <input type="range" id="volume" min="0" max="5" step="1" list="volumlist">
+      <datalist id="volumlist">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+      </datalist>
+      <label for="volume">Громкость</label>
+    </div>
+    <div>
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</section>
+</body>
+</html>
